@@ -2,8 +2,8 @@
 //  PlaySoundsViewController.swift
 //  PitchPerfect
 //
-//  Created by Shroog Salem on 14/09/2019.
-//  Copyright © 2019 Shroog Salem. All rights reserved.
+//  Created by Shroug Salem on 14/09/2019.
+//  Copyright © 2019 Shroug Salem. All rights reserved.
 //
 
 import UIKit
@@ -30,6 +30,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     // MARK: Actions
+    //MARK: - Plating audio with diffrent sound effects (resbonding to button's tag)
     @IBAction func playSoundForButton(_ sender: UIButton) {
         print("Play Sound Button Pressed")
         switch(ButtonType(rawValue: sender.tag)!) {
@@ -49,6 +50,7 @@ class PlaySoundsViewController: UIViewController {
         configureUI(.playing)
     }
     
+    //MARK: - Stop Playing Audio
     @IBAction func stopButtonPressed(_ sender: AnyObject) {
         print("Stop Audio Button Pressed")
         stopAudio()

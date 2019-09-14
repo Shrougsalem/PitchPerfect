@@ -3,7 +3,7 @@
 //  PitchPerfect
 //
 //  Created by Shroog Salem on 14/09/2019.
-//  Copyright © 2019 Shroog Salem. All rights reserved.
+//  Copyright © 2019 Shroug Salem. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,9 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var recordingLabel: UILabel!
     @IBOutlet weak var stopRecordingButton: UIButton!
+    
     var audioRecorder: AVAudioRecorder!
+   
     // MARK: - RecordingState
     enum RecordingState {
         case recording,notRecording

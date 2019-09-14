@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kz9-mx-7Mv" userLabel="Record Button">
-                                <rect key="frame" x="129.5" y="370.5" width="155" height="155"/>
+                                <rect key="frame" x="129.5" y="340.5" width="155" height="155"/>
                                 <state key="normal" image="Record">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -33,13 +33,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TT5-MT-xOP">
-                                <rect key="frame" x="153.5" y="533.5" width="107" height="21"/>
+                                <rect key="frame" x="153.5" y="495.5" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO8-Wp-jx1">
-                                <rect key="frame" x="175" y="562.5" width="64" height="64"/>
+                                <rect key="frame" x="175" y="516.5" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="Q18-OE-hjs"/>
                                     <constraint firstAttribute="height" constant="64" id="ZLS-n9-rXK"/>
@@ -54,14 +54,18 @@
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5QN-n9-nMn"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aqz-al-SXY">
+                                <rect key="frame" x="93" y="88" width="110" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.023778790609999999" green="0.37381559609999998" blue="0.52776443959999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TT5-MT-xOP" firstAttribute="top" secondItem="Kz9-mx-7Mv" secondAttribute="bottom" constant="8" id="3L4-6x-fs1"/>
-                            <constraint firstItem="rO8-Wp-jx1" firstAttribute="top" secondItem="TT5-MT-xOP" secondAttribute="bottom" constant="8" id="Jrg-1c-1NQ"/>
+                            <constraint firstItem="TT5-MT-xOP" firstAttribute="top" secondItem="Kz9-mx-7Mv" secondAttribute="bottom" id="3L4-6x-fs1"/>
+                            <constraint firstItem="rO8-Wp-jx1" firstAttribute="top" secondItem="TT5-MT-xOP" secondAttribute="bottom" id="Jrg-1c-1NQ"/>
                             <constraint firstItem="TT5-MT-xOP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XH2-aH-GgW"/>
                             <constraint firstItem="rO8-Wp-jx1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bSo-Vx-zNA"/>
-                            <constraint firstItem="Kz9-mx-7Mv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kl1-dA-3fb"/>
+                            <constraint firstItem="Kz9-mx-7Mv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="kl1-dA-3fb"/>
                             <constraint firstItem="Kz9-mx-7Mv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wB5-3N-Yqm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -73,11 +73,11 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         audioEngine.attach(reverbNode)
         
         // connect nodes
-        if echo == true && reverb == true {
+        if echo && reverb {
             connectAudioNodes(audioPlayerNode, changeRatePitchNode, echoNode, reverbNode, audioEngine.outputNode)
-        } else if echo == true {
+        } else if echo {
             connectAudioNodes(audioPlayerNode, changeRatePitchNode, echoNode, audioEngine.outputNode)
-        } else if reverb == true {
+        } else if reverb {
             connectAudioNodes(audioPlayerNode, changeRatePitchNode, reverbNode, audioEngine.outputNode)
         } else {
             connectAudioNodes(audioPlayerNode, changeRatePitchNode, audioEngine.outputNode)
